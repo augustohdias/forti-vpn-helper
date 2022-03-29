@@ -4,6 +4,9 @@
 ## Friendly OpenFortiVPN interactive helper
 ## "The philosophers have only interpreted the world in various ways; the point, however, is to change it."
 
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
 setUser() {
 	usr=$VPN_USER
 }
@@ -18,13 +21,13 @@ askPassword() {
 }
 
 askUser() {
-	echo "User environment variable is not set. You can skip this prompt by setting the variable \$VPN_USER in your environment."
+	printf "\n\n${RED}User environment variable is not set. You can skip this prompt by setting the variable VPN_USER in your environment.${NC}\n\n"
 	echo "[vpn] VPN User:"
 	read usr
 }
 
 askHost() {
-	echo "Host environment variable is not set. You can skip this prompt by setting the variable \$VPN_HOST in your environment."
+	printf "\n\n${RED}Host environment variable is not set. You can skip this prompt by setting the variable VPN_HOST in your environment.${NC}\n\n"
 	echo "[vpn] VPN host (<host>:<port>):"
 	read host
 }
