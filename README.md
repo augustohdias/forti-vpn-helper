@@ -12,7 +12,7 @@ You can install it with snap, like this
 sudo snap install openfortivpn
 ```
 
-In case you don't have snap installed, follow your distro (instructions)[https://snapcraft.io/install/openfortivpn]
+In case you don't have snap installed, follow your distro [instructions](https://snapcraft.io/install/openfortivpn)
 
 ### 2. Clone this repository
 
