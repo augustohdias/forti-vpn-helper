@@ -18,13 +18,13 @@ askPassword() {
 }
 
 askUser() {
-	echo "User global variable is not set. You can skip this prompt by setting the variable \$VPN_USER in your environment."
+	echo "User environment variable is not set. You can skip this prompt by setting the variable \$VPN_USER in your environment."
 	echo "[vpn] VPN User:"
 	read usr
 }
 
 askHost() {
-	echo "Host global variable is not set. You can skip this prompt by setting the variable \$VPN_HOST in your environment."
+	echo "Host environment variable is not set. You can skip this prompt by setting the variable \$VPN_HOST in your environment."
 	echo "[vpn] VPN host (<host>:<port>):"
 	read host
 }
