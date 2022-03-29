@@ -45,7 +45,7 @@ Then source your file
 source ~/.bashrc
 ```
 
-###### In case you have love for yourself (.zshrc)
+###### In case you have some love for yourself (.zshrc)
 
 ```
 source ~/.zshrc
