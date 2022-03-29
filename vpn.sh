@@ -21,13 +21,13 @@ askPassword() {
 }
 
 askUser() {
-	printf "\n\n${RED}User environment variable is not set. You can skip this prompt by setting the variable VPN_USER in your environment.${NC}\n\n"
+	printf "\n${RED}User environment variable is not set. You can skip this prompt by setting the variable VPN_USER in your environment.${NC}\n\n"
 	echo "[vpn] VPN User:"
 	read usr
 }
 
 askHost() {
-	printf "\n\n${RED}Host environment variable is not set. You can skip this prompt by setting the variable VPN_HOST in your environment.${NC}\n\n"
+	printf "\n${RED}Host environment variable is not set. You can skip this prompt by setting the variable VPN_HOST in your environment.${NC}\n\n"
 	echo "[vpn] VPN host (<host>:<port>):"
 	read host
 }
@@ -47,10 +47,10 @@ connect() {
 
 # Main script
 
+[[ -z $VPN_USER ]] && askHost || setHost
+
 [[ -z $VPN_USER ]] && askUser || setUser
 
 askPassword
-
-[[ -z $VPN_USER ]] && askHost || setHost
 
 connect | grep -v WARN:
