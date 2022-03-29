@@ -29,7 +29,7 @@ chmod +x vpn.sh
 
 ### 4. [Optional] Set VPN_USER and VPN_HOST environment variables
 
-Add this to your shell file
+Add this to your shell configuration file
 
 ```
 export VPN_USER=<your user credential here>
@@ -37,7 +37,7 @@ export VPN_HOST=<host>:<port>
 ```
 
 
-Then source your file
+Then source it
 
 
 ###### In case you use .bashrc
