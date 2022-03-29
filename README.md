@@ -36,7 +36,8 @@ export VPN_USER=<your user credential here>
 export VPN_HOST=<host>:<port>
 ```
 
-Source your file
+
+Then source your file
 
 
 ###### In case you use .bashrc
