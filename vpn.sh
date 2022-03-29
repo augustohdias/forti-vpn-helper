@@ -8,6 +8,10 @@ setUser() {
 	usr=$VPN_USER
 }
 
+setHost() {
+	usr=$VPN_HOST
+}
+
 askPassword() {
 	echo "[vpn] VPN Password:"
 	read -s pass
@@ -44,6 +48,6 @@ connect() {
 
 askPassword
 
-askHost
+[[ -z $VPN_USER ]] && askHost || setHost
 
 connect | grep -v WARN:
