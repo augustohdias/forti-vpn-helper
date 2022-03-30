@@ -47,7 +47,7 @@ connect() {
 
 # Main script
 
-[[ -z $VPN_USER ]] && askHost || setHost
+[[ -z $VPN_HOST ]] && askHost || setHost
 
 [[ -z $VPN_USER ]] && askUser || setUser
 
